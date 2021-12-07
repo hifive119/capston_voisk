@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:weightSum="13">
+
+    <ImageView
+        android:id="@+id/menu_bulgogi"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:src="@drawable/bulgogi" />
+
+    <Button
+        android:id="@+id/menu_bulgogi_btn"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="불고기 버거"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/menu_chicken"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:src="@drawable/chicken" />
+
+    <Button
+        android:id="@+id/menu_chicken_btn"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="치킨 버거"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/menu_shrimp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:src="@drawable/shrimp" />
+
+    <Button
+        android:id="@+id/menu_shrimp_btn"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="새우 버거"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/menu_deri"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:src="@drawable/deri" />
+
+    <Button
+        android:id="@+id/menu_deri_btn"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="데리 버거"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/menu_cheese"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:src="@drawable/cheese" />
+
+    <Button
+        android:id="@+id/menu_cheese_btn"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="치즈 버거"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/main_button"
+        android:drawableLeft="@drawable/ic_baseline_keyboard_voice_24"
+        android:text="음성 인식" />
+
+    <TextView
+        android:id="@+id/txtInMsg"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/txtSystem"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+</LinearLayout>

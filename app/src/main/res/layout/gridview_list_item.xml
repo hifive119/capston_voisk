@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:weightSum="100">
+
+    <LinearLayout
+        android:layout_width="70dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="80"
+            android:background="#ECECEC" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="20"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <TextView
+                android:id="@+id/tv_num"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="20"
+                android:background="#070961"
+                android:gravity="center"
+                android:text="번호"
+                android:textColor="#FFFFFF"/>
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="80"
+                android:background="#BABDCD"
+                android:gravity="center"
+                android:text="이름"
+                android:textColor="#000000"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
