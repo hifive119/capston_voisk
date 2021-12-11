@@ -193,7 +193,7 @@ public class MainMenuActivity extends AppCompatActivity {
         }
         if (VoiceMsg_menu.indexOf("아니오") > -1 || VoiceMsg_menu.indexOf("아니요") > -1) {
             FuncVoiceOut("결제 화면으로 넘어갑니다.");
-            Intent intent = new Intent(this, PayMentActivity.class);
+            Intent intent = new Intent(this, MainActivity.class);
             startActivity(intent);
         }
     }
