@@ -11,7 +11,9 @@ import android.speech.RecognitionListener;
 import android.speech.RecognizerIntent;
 import android.speech.SpeechRecognizer;
 import android.speech.tts.TextToSpeech;
+import android.view.LayoutInflater;
 import android.widget.Button;
+import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -100,7 +102,7 @@ public class MainMenuActivity extends AppCompatActivity {
 
         @Override
         public void onBeginningOfSpeech() {
-            txtSystem_menu.setText("원하는 메뉴를 말씀하세요.");
+            txtSystem_menu.setText("듣는 중입니다.");
         }
 
         @Override
@@ -186,6 +188,7 @@ public class MainMenuActivity extends AppCompatActivity {
 
         if (VoiceMsg_menu.indexOf("예") > -1 || VoiceMsg_menu.indexOf("네") > -1) {
             FuncVoiceOut("원하는 메뉴를 말씀해 주세요.");
+            txtSystem_menu.setText("원하는 메뉴를 말씀하세요.");
             finish();
         }
         if (VoiceMsg_menu.indexOf("아니오") > -1 || VoiceMsg_menu.indexOf("아니요") > -1) {
@@ -203,7 +206,6 @@ public class MainMenuActivity extends AppCompatActivity {
         tts_menu.speak(OutMsg, TextToSpeech.QUEUE_FLUSH, null);
 
         //어플이 종료할때는 완전히 제거
-
     }
 
 }
