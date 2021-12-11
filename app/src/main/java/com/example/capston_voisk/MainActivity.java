@@ -169,7 +169,7 @@ public class MainActivity extends AppCompatActivity {
         }
     };
 
-    private void FuncVoiceOrderCheck (String VoiceMsg) {
+    private void FuncVoiceOrderCheck(String VoiceMsg) {
 
         Button bulgogi_button = findViewById(R.id.menu_bulgogi_btn);
         ImageView menu1_img = findViewById(R.id.menu_bulgogi);
@@ -190,10 +190,10 @@ public class MainActivity extends AppCompatActivity {
 
         VoiceMsg = VoiceMsg.replace(" ", ""); // 공백 제거
 
-        bulgogi_button.setOnClickListener(v-> {
+        bulgogi_button.setOnClickListener(v -> {
             ByteArrayOutputStream stream = new ByteArrayOutputStream();
-            Bitmap bitmap = ((BitmapDrawable)menu1_img.getDrawable()).getBitmap();
-            float scale = (1024/(float)bitmap.getWidth());
+            Bitmap bitmap = ((BitmapDrawable) menu1_img.getDrawable()).getBitmap();
+            float scale = (1024 / (float) bitmap.getWidth());
             int image_w = (int) (bitmap.getWidth() * scale);
             int image_h = (int) (bitmap.getHeight() * scale);
             Bitmap resize = Bitmap.createScaledBitmap(bitmap, image_w, image_h, true);
@@ -205,10 +205,10 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent_menu);
         });
 
-        chicken_button.setOnClickListener(v-> {
+        chicken_button.setOnClickListener(v -> {
             ByteArrayOutputStream stream = new ByteArrayOutputStream();
-            Bitmap bitmap = ((BitmapDrawable)menu2_img.getDrawable()).getBitmap();
-            float scale = (1024/(float)bitmap.getWidth());
+            Bitmap bitmap = ((BitmapDrawable) menu2_img.getDrawable()).getBitmap();
+            float scale = (1024 / (float) bitmap.getWidth());
             int image_w = (int) (bitmap.getWidth() * scale);
             int image_h = (int) (bitmap.getHeight() * scale);
             Bitmap resize = Bitmap.createScaledBitmap(bitmap, image_w, image_h, true);
@@ -220,10 +220,10 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent_menu);
         });
 
-        shrimp_button.setOnClickListener(v-> {
+        shrimp_button.setOnClickListener(v -> {
             ByteArrayOutputStream stream = new ByteArrayOutputStream();
-            Bitmap bitmap = ((BitmapDrawable)menu3_img.getDrawable()).getBitmap();
-            float scale = (1024/(float)bitmap.getWidth());
+            Bitmap bitmap = ((BitmapDrawable) menu3_img.getDrawable()).getBitmap();
+            float scale = (1024 / (float) bitmap.getWidth());
             int image_w = (int) (bitmap.getWidth() * scale);
             int image_h = (int) (bitmap.getHeight() * scale);
             Bitmap resize = Bitmap.createScaledBitmap(bitmap, image_w, image_h, true);
@@ -235,10 +235,10 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent_menu);
         });
 
-        deri_button.setOnClickListener(v-> {
+        deri_button.setOnClickListener(v -> {
             ByteArrayOutputStream stream = new ByteArrayOutputStream();
-            Bitmap bitmap = ((BitmapDrawable)menu4_img.getDrawable()).getBitmap();
-            float scale = (1024/(float)bitmap.getWidth());
+            Bitmap bitmap = ((BitmapDrawable) menu4_img.getDrawable()).getBitmap();
+            float scale = (1024 / (float) bitmap.getWidth());
             int image_w = (int) (bitmap.getWidth() * scale);
             int image_h = (int) (bitmap.getHeight() * scale);
             Bitmap resize = Bitmap.createScaledBitmap(bitmap, image_w, image_h, true);
@@ -250,10 +250,10 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent_menu);
         });
 
-        cheese_button.setOnClickListener(v-> {
+        cheese_button.setOnClickListener(v -> {
             ByteArrayOutputStream stream = new ByteArrayOutputStream();
-            Bitmap bitmap = ((BitmapDrawable)menu5_img.getDrawable()).getBitmap();
-            float scale = (1024/(float)bitmap.getWidth());
+            Bitmap bitmap = ((BitmapDrawable) menu5_img.getDrawable()).getBitmap();
+            float scale = (1024 / (float) bitmap.getWidth());
             int image_w = (int) (bitmap.getWidth() * scale);
             int image_h = (int) (bitmap.getHeight() * scale);
             Bitmap resize = Bitmap.createScaledBitmap(bitmap, image_w, image_h, true);
@@ -287,7 +287,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    private void FuncVoiceOut (String OutMsg) {
+    private void FuncVoiceOut(String OutMsg) {
         if (OutMsg.length() < 1) return;
 
         tts.setPitch(1.0f);

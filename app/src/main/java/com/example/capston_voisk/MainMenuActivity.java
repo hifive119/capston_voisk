@@ -207,5 +207,4 @@ public class MainMenuActivity extends AppCompatActivity {
 
         //어플이 종료할때는 완전히 제거
     }
-
 }
